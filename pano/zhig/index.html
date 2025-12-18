@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Жигулевск</title>
+  <link rel="stylesheet" href="pannellum/pannellum.css"/>
+  <style>html,body,#panorama{height:100%;margin:0;}</style>
+  <script src="pannellum/pannellum.js"></script>
+ 
+</head>
+<body>
+  <!-- a href="#" onclick="history.back(); return false;">Back</a -->
+  <div id="panorama"></div>
+  <script>
+     window.addEventListener('load', async() => {
+       const config = await (await fetch("scenes.json")).json();
+       config.default.basePath = "./";
+       pannellum.viewer('panorama', config);
+     });
+  </script>
+</body>
+</html>

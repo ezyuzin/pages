@@ -1,0 +1,50 @@
+<html>
+  <head>
+	  <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/markdown.css">
+    <link rel="stylesheet" href="css/github.min.css">
+    <script src="js/detect-charset.js"></script>
+    <script src="js/markdown-it@14.1.0.min.js"></script>
+    <script src="js/markdown-it-attrs@4.1.0.js"></script>
+    <script src="js/markdown-it-task-lists.min.js"></script>
+  </head>
+ 
+  <body>
+    <div id="content"></div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      let markdown = params.get('md') || "./readme.md";
+
+      const href = window.location.href;
+      const basepath = href.substring(0, href.lastIndexOf("/"));
+      document.write("<base href='" + basepath + "' />");
+      
+      if (markdown) {
+        fetch(markdown).then(async (response) => {
+          const data = await response.arrayBuffer();
+          const decoder = new TextDecoder(detect_charset(new Uint8Array(data)));
+          const source = decoder.decode(data);
+          const md = window.markdownit({
+            html: true
+          })
+          .use(window.markdownItAttrs)
+          .use(window.markdownitTaskLists);
+            
+          const container = document.getElementById("content");
+          container.innerHTML = md.render(source);
+          
+          container.querySelectorAll("script").forEach((oldScript) => {
+            const newScript = document.createElement("script");
+            if (oldScript.src) {
+              newScript.src = oldScript.src;
+            } else {
+              newScript.textContent = oldScript.textContent;
+            }        
+            document.head.appendChild(newScript);
+            document.head.removeChild(newScript); // опционально
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

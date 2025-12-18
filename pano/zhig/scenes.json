@@ -1,0 +1,342 @@
+{
+  "default": {
+    "firstScene": "morkvashi",
+    "sceneFadeDuration": 1000,
+    "autoLoad": true,
+    "basePath": "./img/"
+  },
+  "scenes": {
+    "morkvashi": {
+      "title": "Моркваши, Жигулевск, 2018",
+      "type": "equirectangular",
+      "panorama": "pano1.jpg",
+      "autoLoad": true,
+      "showZoomCtrl": false,
+      "compass": false,
+      "hotSpotDebug": true,
+      "minHfov": 5,
+      "maxHfov": 120,
+      "autoRotate": 0,
+      "pitch": -11.649048749581504,
+      "yaw": 72.30118627024688,
+      "hfov": 78.96104207076549,
+      "hotSpots": [
+        {
+          "pitch": -42.945702356205,
+          "yaw": 46.518412021638287,
+          "type": "info",
+          "text": "Коттедж шефа"
+        },
+        {
+          "pitch": -21.657703012647369,
+          "yaw": 108.03797315431528,
+          "type": "info",
+          "text": "Мокваши, универмаг"
+        },
+        {
+          "pitch": -25.313140459152434,
+          "yaw": 164.56967568792585,
+          "type": "info",
+          "text": "ул. Репина д.13",
+          "sceneId": "repin13"
+        },
+        {
+          "pitch": -59.41454176410147,
+          "yaw": 111.65641110826995,
+          "type": "info",
+          "text": "ЗАО Мета",
+          "sceneId": "Meta2"
+        },
+        {
+          "pitch": -36.1592532530291,
+          "yaw": 170.7504548999358,
+          "type": "info",
+          "text": "ул. Репина д.7",
+          "sceneId": "repin7"
+        },
+        {
+          "pitch": -37.378710181854888,
+          "yaw": 256.60225829882958,
+          "type": "info",
+          "text": "Мета, новый офис",
+          "sceneId": "Meta"
+        },
+        {
+          "pitch": -31.642653337576797,
+          "yaw": 161.18999167076746,
+          "type": "info",
+          "text": "школа N13"
+        },
+        {
+          "pitch": -12.116250580901232,
+          "yaw": -60.559945321213039,
+          "type": "info",
+          "text": "Жигулевск, Центр",
+          "sceneId": "zhig-center"
+        },
+        {
+          "pitch": -11.905924801990805,
+          "yaw": -154.04831882990778,
+          "type": "info",
+          "text": "Радиозавод",
+          "sceneId": "radiozavod"
+        }
+      ]
+    },
+    "Meta2": {
+      "title": "Жигулевск, 2018",
+      "type": "equirectangular",
+      "panorama": "pano-meta2.jpg",
+      "horizonPitch": 0,
+      "autoLoad": true,
+      "showZoomCtrl": false,
+      "compass": false,
+      "hotSpotDebug": true,
+      "minHfov": 5,
+      "maxHfov": 120,
+      "autoRotate": 0,
+      "pitch": 1.9451367757177474,
+      "yaw": -216.8727319639555,
+      "hfov": 78.96104207076549,
+      "hotSpots": [
+        {
+          "pitch": 0.8636085359525962,
+          "yaw": 102.64676686926248,
+          "type": "info",
+          "text": "ЗАО МЕТА",
+          "div": {}
+        },
+        {
+          "pitch": 11.441273932028493,
+          "yaw": 55.55268657489512,
+          "type": "info",
+          "text": "Моркваши",
+          "sceneId": "morkvashi"
+        },
+        {
+          "pitch": -2.6287797522407878,
+          "yaw": 9.926596568063076,
+          "type": "info",
+          "text": "Остановка автобуса, до Могутки",
+          "div": {}
+        }
+      ]
+    },
+    "Meta": {
+      "title": "ЗАО Мета",
+      "type": "equirectangular",
+      "panorama": "pano-meta.jpg",
+      "horizonPitch": 0,
+      "autoLoad": true,
+      "showZoomCtrl": false,
+      "compass": false,
+      "hotSpotDebug": true,
+      "minHfov": 5,
+      "maxHfov": 120,
+      "autoRotate": 0,
+      "pitch": 2.874264970190052,
+      "yaw": -118.5210826626743,
+      "hfov": 78.96104207076549,
+      "hotSpots": [
+        {
+          "pitch": 7.668539227520941,
+          "yaw": -116.70449077834383,
+          "type": "info",
+          "text": "ЗАО МЕТА"
+        },
+        {
+          "pitch": 10.251164944839882,
+          "yaw": 161.82683240667553,
+          "type": "info",
+          "text": "Моркваши",
+          "sceneId": "morkvashi"
+        }
+      ]
+    },
+    "repin7": {
+      "title": "ул. Репина д.7. Жигулевск, 2024",
+      "type": "equirectangular",
+      "panorama": "pano-repin7.jpg",
+      "autoLoad": true,
+      "showZoomCtrl": false,
+      "compass": false,
+      "hotSpotDebug": true,
+      "minHfov": 5,
+      "maxHfov": 120,
+      "autoRotate": 0,
+      "pitch": 15.607739361942285,
+      "yaw": -277.9437467952906,
+      "hfov": 120,
+      "hotSpots": [
+        {
+          "pitch": 26.246744241923069,
+          "yaw": -284.8009225436219,
+          "type": "info",
+          "text": "Наша квартира, кв.48"
+        },
+        {
+          "pitch": 12.142873408365193,
+          "yaw": -91.51372607715698,
+          "type": "info",
+          "text": "Моркваши",
+          "sceneId": "morkvashi"
+        }
+      ]
+    },
+    "repin13": {
+      "title": "Репина д.13, Жигулевск, 2018",
+      "type": "equirectangular",
+      "panorama": "pano4.jpg",
+      "autoLoad": true,
+      "showZoomCtrl": false,
+      "compass": false,
+      "hotSpotDebug": true,
+      "minHfov": 5,
+      "maxHfov": 120,
+      "autoRotate": 0,
+      "pitch": 1.4684169077055112,
+      "yaw": -83.95390259879336,
+      "hfov": 78.96104207076549,
+      "hotSpots": [
+        {
+          "pitch": 12.142873408365193,
+          "yaw": -91.51372607715698,
+          "type": "info",
+          "text": "Моркваши",
+          "sceneId": "morkvashi"
+        }
+      ]
+    },
+    "zhig-center": {
+      "title": "Жигулевск, Центр",
+      "type": "equirectangular",
+      "panorama": "pano2.jpg",
+      "autoLoad": true,
+      "showZoomCtrl": false,
+      "compass": false,
+      "hotSpotDebug": true,
+      "minHfov": 5,
+      "maxHfov": 120,
+      "autoRotate": 0,
+      "pitch": -62.55188307820426,
+      "yaw": -79.00670391599891,
+      "hfov": 120,
+      "hotSpots": [
+        {
+          "pitch": -7.716023794112527,
+          "yaw": 41.78166963924204,
+          "type": "info",
+          "text": "Моркваши",
+          "sceneId": "morkvashi"
+        },
+        {
+          "pitch": -40.17605131799094,
+          "yaw": -95.91623803170653,
+          "type": "info",
+          "text": "Центральная площадь",
+          "sceneId": "zhig-center2"
+        },
+        {
+          "pitch": -13.369959492348532,
+          "yaw": -239.79526682510395,
+          "type": "info",
+          "text": "Церковь"
+        },
+        {
+          "pitch": -4.679139421246724,
+          "yaw": 78.12522948279377,
+          "type": "info",
+          "text": "Радиозавод",
+          "sceneId": "radiozavod"
+        }
+      ]
+    },
+    "zhig-center2": {
+      "title": "Жигулевск, Центральная площадь",
+      "type": "equirectangular",
+      "panorama": "pano3.jpg",
+      "autoLoad": true,
+      "showZoomCtrl": false,
+      "compass": false,
+      "hotSpotDebug": true,
+      "minHfov": 5,
+      "maxHfov": 120,
+      "autoRotate": 0,
+      "pitch": -69.82449883778846,
+      "yaw": 162.29792733909296,
+      "hfov": 78.96104207076549,
+      "hotSpots": [
+        {
+          "pitch": -37.591738273980919,
+          "yaw": 29.88384015225656,
+          "type": "info",
+          "text": "Стадион",
+          "sceneId": "zhig-center"
+        },
+        {
+          "pitch": -6.621757087761653,
+          "yaw": -36.419120043536199,
+          "type": "info",
+          "text": "Моркваши",
+          "sceneId": "morkvashi"
+        },
+        {
+          "pitch": -25.970001802551957,
+          "yaw": -145.80183452982966,
+          "type": "info",
+          "text": "Могутка, автобус до Тольятти"
+        },
+        {
+          "pitch": -4.507098040769448,
+          "yaw": -0.42591392796953189,
+          "type": "info",
+          "text": "Радиозавод",
+          "sceneId": "radiozavod"
+        }
+      ]
+    },
+    "radiozavod": {
+      "title": "Жигулевск, Радиозавод",
+      "type": "equirectangular",
+      "panorama": "pano-radiozavod.jpg",
+      "autoLoad": true,
+      "showZoomCtrl": false,
+      "compass": false,
+      "hotSpotDebug": true,
+      "minHfov": 5,
+      "maxHfov": 120,
+      "autoRotate": 0,
+      "pitch": 1.9002952709905952,
+      "yaw": -280.4325819668293,
+      "hfov": 120,
+      "hotSpots": [
+        {
+          "pitch": 1.9182295642858112,
+          "yaw": 79.46827784570024,
+          "type": "info",
+          "text": "Радиозавод"
+        },
+        {
+          "pitch": 0.42567408437378886,
+          "yaw": 164.3911926631008,
+          "type": "info",
+          "text": "Старой цех ЗАО МЕТА"
+        },
+        {
+          "pitch": 13.902879352449907,
+          "yaw": -47.08690951563847,
+          "type": "info",
+          "text": "Моркваши",
+          "sceneId": "morkvashi"
+        },
+        {
+          "pitch": 21.526379772949114,
+          "yaw": -103.78773469526368,
+          "type": "info",
+          "text": "Жигулевск, Центр",
+          "sceneId": "zhig-center"
+        }
+      ]
+    }
+  }
+}
