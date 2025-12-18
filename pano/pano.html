@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Pannellum 360</title>
+  <link rel="stylesheet" href="pannellum.css"/>
+  <style>html,body,#panorama{height:100%;margin:0;}</style>
+  <script src="pannellum.js"></script>
+ 
+</head>
+<body>
+ <div id="panorama"></div>
+ <script>
+    console.log(window.location);
+ 
+    const params = new URLSearchParams(window.location.search);
+    const imgName = params.get('img') || './pano1.jpg'; // fallback по умолчанию  
+
+    pannellum.viewer('panorama', {
+      "type": "equirectangular",
+      "panorama": imgName,
+      "autoLoad": true,
+      "showZoomCtrl": false,
+      "compass": false,
+      "hotSpotDebug": false,
+      "minHfov": 5,   // максимальный зум
+      "maxHfov": 120,   // минимальный зум      
+      "autoRotate": 0, // градусы/сек, 0 — без автопрокрутки
+      
+      "pitch": -25.209475740630676, 
+      "yaw": 88.37643306336318, 
+      "hfov": 78.96104207076549,   
+      "hotSpots": [
+        {
+            "pitch": -42.945702356205, 
+            "yaw": 46.518412021638284,
+            "targetHfov": 13.3619516593455,
+            "type": "info",
+            "text": "Коттедж шефа"
+        },
+        {
+            "pitch": -21.657703012647367, 
+            "yaw": 108.03797315431528,
+            "targetHfov": 8.61998389685299,
+            "type": "info",
+            "text": "Мокваши, универмаг"
+        },
+        {
+            "pitch": -25.313140459152432,
+            "yaw": 164.56967568792584,
+            "type": "info",
+            "text": "ул. Репина д.13",
+            "clickHandlerFunc": (e) => {
+              window.location = "view360.html?img=pano4.jpg"
+              console.log(e);
+            }
+        },
+        {
+            "pitch": -59.41454176410147,
+            "yaw": 111.65641110826995,
+            "type": "info",
+            "text": "ЗАО Мета"
+        },
+        {
+            "pitch": -36.1592532530291,
+            "yaw": 170.7504548999358,
+            "type": "info",
+            "text": "Репина 7, кв.48"
+        },
+        {
+            "pitch": -37.378710181854885,
+            "yaw": 256.60225829882955,
+            "type": "info",
+            "text": "Мета, новый офис"
+        },
+        {
+            "pitch": -31.642653337576796,
+            "yaw": 161.18999167076745,
+            "type": "info",
+            "text": "школа N13"
+        }
+    ]      
+      
+    });
+  </script>
+</body>
+</html>
